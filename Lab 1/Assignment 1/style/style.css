@@ -4,6 +4,10 @@ body {
     margin: 0 auto;
   }
   
+  .receiver-column {
+    text-align: right;
+  }
+  
   .sender-column {
     text-align: right;
   }
