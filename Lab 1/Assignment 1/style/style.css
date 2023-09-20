@@ -3,7 +3,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
-  
+  /* designing the class for the address */
   .receiver-column {
     text-align: right;
   }
