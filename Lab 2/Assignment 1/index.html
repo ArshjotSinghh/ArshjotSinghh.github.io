@@ -10,112 +10,23 @@
 	    File: index.html
 	    Date: 26 September 2023
       This assignment works with adding different images to the HTML page. This is based on Mozilla Splash page activity. 
-
     -->
     <!---This is the css styling of the HTML page-->
-    <style>
-      /* header and body setup */
-
-      html {
-        font-family: 'Open Sans', sans-serif;
-        background: url(pattern.png);
-      }
-
-      body {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: white;
-        position: relative;
-      }
-
-      /* Header styling */
-
-      header {
-        height: 150px;
-      }
-
-      header img {
-        width: 100px;
-        position: absolute;
-        right: 32.5px;
-        top: 32.5px;
-      }
-
-      h1 {
-        font-size: 50px;
-        line-height: 140px;
-        margin: 0 0 0 32.5px;
-      }
-
-      /* main section and video styling */
-
-      main {
-        background: #ccc;
-      }
-
-      article {
-        padding: 20px;
-      }
-
-      h2 {
-        margin-top: 0;
-      }
-
-      p {
-        line-height: 2;
-      }
-
-      iframe {
-        float: left;
-        margin: 0 20px 20px 0;
-        max-width: 100%;
-      }
-
-      /* further info links */
-
-      .further-info {
-        clear: left;
-        padding: 40px 0;
-        background: #c13832;
-        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
-                    inset 0 -3px 2px rgba(0,0,0,0.5);
-      }
-
-      .further-info a {
-        width: 25%;
-        display: block;
-        float: left;
-      }
-
-      .further-info img {
-        max-width: 100%;
-      }
-
-      .clearfix {
-        clear: both;
-      }
-
-      /* Red panda image */
-
-      .red-panda img {
-        display: block;
-        max-width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
+      <!--/* header and body setup */-->
   </head>
   <body>
     <header>
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-
+      <img src="firefox_logo-only_RGB120.png" alt="Small version of the Firefox logo ">
     </header>
-
     <main>
       <!--This starts the main content of the page.-->
       <article>
         <!-- insert iframe from youtube -->
+        <iframe width="400" src="https://www.youtube.com/watch?v=ojcNcvb1olg" frameborder="0"></iframe>
 
         <h2>Rocking the free web</h2>
 
