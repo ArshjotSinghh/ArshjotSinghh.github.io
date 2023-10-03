@@ -1,7 +1,8 @@
+/*This the CSS file which is linked to the HTML page */
 html {
     font-family: sans-serif;
   }
-  
+  /*The styling of the table starts here. */
   table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
@@ -29,7 +30,7 @@ html {
   tr:nth-child(odd) td {
     background-color: rgb(245,245,245);
   }
-  
+  /*This is the styling of the caption. */
   caption {
     padding: 10px;
   }
