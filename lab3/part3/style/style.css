@@ -43,3 +43,28 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+
+  @font-face {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'PT Serif', serif;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind+Madurai:wght@300&family=PT+Serif&display=swap');
+  }
+
+  body{
+      font-family: 'Hind Madurai', sans-serif;
+  }
+
+  /*
+  ** General text styling: **
+  */
+
+  /*
+  ** Give the page a site-wide font-size of 10px
+  ** Give your body text some letter-spacing and word-spacing, as appropriate.
+  */
+  html{
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      word-spacing: 0.5px;
+  }
