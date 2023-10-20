@@ -102,3 +102,43 @@ body{
 header{
     text-align: center;
 }
+
+/*
+  ** Give the first paragraph after each heading 
+  in the <section> a little bit of text-indentation, say 20px
+  */
+
+  section h1 + p, section h2 + p{
+    text-indent: 20px;
+}
+
+/** Links: **/
+
+/*
+* Give the link, visited, focus, and hover states 
+some colors that go with the color of the 
+horizontal bars at the top and bottom of the page.
+* Make it so that links are underlined by default, 
+but when you hover or focus them the underline disappears.
+* Remove the default focus outline from ALL the links on the page.
+* Give the active state a noticeably different styling so it stands out nicely, 
+but make it still fit in with the overall page design.
+* Make it so that external links have the 
+external link icon inserted next to them.
+*/
+
+a:link{
+  color: rgb(12, 102, 105);
+}
+a:visited{
+  color: rgb(90, 52, 52);
+}
+a:focus{
+  color: rgb(99, 75, 23);
+  text-decoration: none;
+  outline: none;
+}
+a:hover{
+  color: rgb(126, 133, 34);
+  text-decoration: none;
+}
