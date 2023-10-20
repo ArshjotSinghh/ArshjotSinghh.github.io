@@ -55,8 +55,25 @@ body {
     justify-content: space-between;
     margin: 1%;
   }
-  
+
   nav {
     position: sticky;
     top: 0px;
+  }
+
+  .feature {
+    float: left;
+    margin-right: 1%;
+  }
+  
+  main {
+    display: grid;
+    grid-template-areas:
+      "article article aside aside"
+      ;
+    grid-gap: 20%;
+  }
+  
+  article {
+    grid-area: article;
   }
