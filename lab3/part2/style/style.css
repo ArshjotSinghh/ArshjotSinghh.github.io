@@ -3,3 +3,11 @@ html {
   }
   
   /* Your CSS below here */
+
+p {
+    inline-size: 200px;
+    block-size: 1em;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.1rem;
+}
