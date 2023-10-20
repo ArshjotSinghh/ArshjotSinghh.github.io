@@ -1,3 +1,6 @@
+/*
+The styling of the page is done here
+*/
 body {
     background-color: #fff;
     color: #333;
@@ -5,12 +8,14 @@ body {
     padding: 1em;
     margin: 0;
       }
-
-      h1 {
+/*
+The h1 nd h2 are styled here.
+*/
+h1 {
     color:hotpink;
     font-size: 2em;
     font-family: Georgia, "Times New Roman", Times, serif;
-    border-bottom: 1px solid purple;
+    border-bottom: 10px dotted purple;
       }
 
 h2 {
@@ -18,21 +23,25 @@ h2 {
         font-style: italic;
       }
 
-      .job-title {
+.job-title {
         color: #999999;
         font-weight: bold;
       }
 
-      a:link,
-      a:visited {
+a:link,
+a:visited {
         color: #fb6542;
       }
 
-      a:hover {
+a:hover {
         text-decoration: none;
         color: green;
       }
-
+/*
+The link is styled here.
+*/
       ul {
         background-color: #eeeeee;
+        border: 5px solid purple;
+        padding: 25px;
       }
