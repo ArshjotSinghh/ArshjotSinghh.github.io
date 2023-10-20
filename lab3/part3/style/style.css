@@ -68,3 +68,37 @@
       letter-spacing: 0.5px;
       word-spacing: 0.5px;
   }
+   /*    
+  ** Give your headings and other element types 
+    appropriate font-sizes defined using a suitable relative unit.
+  ** Give your headings a little bit of letter-spacing 
+    to make them not too squashed, and allow the letters to breathe a bit.
+  */
+  h1, h2 {
+    letter-spacing: 0.25rem;
+    font-family: 'EB Garamond', serif;
+}
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+p, li {
+    font-size: 2rem;
+}
+
+/*
+** Give your body text a suitable line-height.
+*/
+body{
+  line-height: 1.6;
+}
+
+/*
+** Center your top level heading on the page.
+*/
+header{
+    text-align: center;
+}
