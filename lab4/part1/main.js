@@ -6,3 +6,38 @@ let storyText= 'It was 94 farenheit outside, so :insertx: went for a walk. When 
 let insertX=['Willy the Goblin','Big Daddy','Father Christmas'];
 let insertY=['the soup kitchen','Disneyland','the White House'];
 let insertZ=['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
+
+function randomValueFromArray(array){
+    return array[Math.floor(Math.random()*array.length)]
+}
+
+randomize.addEventListener('click',result)
+
+function result(){
+    console.log('hello')
+    let newStory=storyText
+    let itemX=randomValueFromArray(insertX)
+    let itemY=randomValueFromArray(insertY)
+    let itemZ=randomValueFromArray(insertZ)
+
+    newStory=newStory.replace(':insertx:',itemX)
+    newStory=newStory.replace(':insertx:',itemX)
+    newStory=newStory.replace(':inserty:',itemY)
+    newStory=newStory.replace(':insertz:',itemZ)
+
+    if(customName.value!=''){
+        let name=customName.value;
+        newStory=newStory.replace('Bob',name)
+    }
+
+    if(document.getElementById("uk").checked){
+        let weight=Math.round(300*0.71429)+' stone';
+        let temperature=Math.round((94-32)*5/9)+' centigrade';
+        newStory=newStory.replace('300 pounds',weight)
+        newStory=newStory.replace('94 fahrenheit',temperature)
+    }
+    console.log(newStory)
+
+    story.textContent=newStory;
+    story.style.visibility='visible';
+}
