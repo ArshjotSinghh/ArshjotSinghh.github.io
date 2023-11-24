@@ -22,7 +22,7 @@ const alts={
 
 for(const image of allImages){
     const newImage=document.createElement('img');
-    newImage.setAttribute('src',`images/${img}`);
+    newImage.setAttribute('src',`images/${image}`);
     thumbBar.appendChild(newImage)
 }
 
@@ -34,5 +34,16 @@ thumbBar.addEventListener('click',setEventToEverySingleImage)
 
 /* Wiring up the Darken/Lighten button */
 
+function changeMode(){
+    if(btn.getAttribute('class')==='dark'){
+        btn.setAttribute('class','light');
+        btn.textContent='Lighten'
+        overlay.style.backgroundColor='rgba(0,0,0,0.5)';
+    }else if (btn.getAttribute('class')==='light'){
+        btn.setAttribute("class","dark");
+        btn.textContent="Darken";
+        overlay.style.backgroundColor="rgba(0,0,0,0)"
+    }
+}
 
-
+btn.addEventListener('click',changeMode)
