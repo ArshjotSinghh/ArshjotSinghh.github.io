@@ -1,3 +1,4 @@
+// The constants are defined here.
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
