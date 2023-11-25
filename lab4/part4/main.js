@@ -18,15 +18,12 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 // The ball class is defined here.
-class Ball {
-
+class Ball extends Shape{
    constructor(x, y, velX, velY, color, size) {
-      this.x = x;
-      this.y = y;
-      this.velX = velX;
-      this.velY = velY;
+      super(Shape)
       this.color = color;
       this.size = size;
+      exists=true
    }
    // The draw method is defined here
    draw() {
@@ -54,7 +51,7 @@ class Ball {
 
   collisionDetect() {
     for (const ball of balls) {
-      if (this !== ball) {
+      if (!(this === ball) && ball.exists) {
         const dx = this.x - ball.x;
         const dy = this.y - ball.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
@@ -65,8 +62,15 @@ class Ball {
       }
     }
   }
-   
   
+}
+class Shape{
+    constructor(x,y,velX,velY){
+        this.x=x;
+        this.y=y;
+        this.velX=velX;
+        this.velY=velY
+    }
 }
 // This stores the balls 
 const balls = [];
