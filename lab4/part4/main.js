@@ -1,9 +1,5 @@
-// Thanks to Renan Martineli for this version of the demo
 
-// setup canvas
-
-
-
+// the constants and variables are defined here.
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
@@ -24,7 +20,7 @@ function random(min,max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
-
+// the class shape is defined here
 class Shape {
 
   constructor(x, y, velX, velY) {
@@ -35,7 +31,7 @@ class Shape {
   }
 
 }
-
+// the ball class extends the shape class
 class Ball extends Shape {
 
   constructor(x, y, velX, velY, color, size) {
@@ -45,13 +41,14 @@ class Ball extends Shape {
     this.size = size;
     this.exists = true;
   }
-
+// the draw method of ball class is defined here 
   draw() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
   }
+// the update method of ball class is defined here 
 
   update() {
     if ((this.x + this.size) >= width) {
@@ -74,6 +71,7 @@ class Ball extends Shape {
     this.y += this.velY;
   }
 
+// the collisionDetect method of ball class is defined here 
 
   collisionDetect() {
      for (const ball of balls) {
@@ -90,7 +88,7 @@ class Ball extends Shape {
   }
 
 }
-
+// the evil circle class is defined here which is an extension of the shape class
 class EvilCircle extends Shape {
 
   constructor(x, y) {
@@ -98,7 +96,7 @@ class EvilCircle extends Shape {
 
     this.color = "white";
     this.size = 10;
-
+// the event listeners are defined here 
     window.addEventListener('keydown', (e) => {
       switch(e.key) {
         case 'a':
@@ -116,7 +114,7 @@ class EvilCircle extends Shape {
       }
     });
   }
-
+// the drwa method for the evilcircle is defined here
   draw() {
     ctx.beginPath();
     ctx.strokeStyle = this.color;
@@ -124,7 +122,7 @@ class EvilCircle extends Shape {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.stroke();
   }
-
+// the checkbounds method for evilcircle is defined here
   checkBounds() {
     if ((this.x + this.size) >= width) {
       this.x -= this.size;
@@ -180,7 +178,7 @@ while (balls.length < 25) {
   count++;
   para.textContent = 'Ball count: ' + count;
 }
-
+// a new instance of evil ball is defined here 
 const evilBall = new EvilCircle(random(0, width), random(0, height));
 
 function loop() {
