@@ -1,3 +1,4 @@
+/* The styling of the page is defined here*/
 html, body {
     margin: 0;
   }
@@ -11,7 +12,8 @@ html, body {
     overflow: hidden;
     height: inherit;
   }
-  
+  /* The styling of the h1 is defined here*/
+
   h1 {
     font-size: 2rem;
     letter-spacing: -1px;
